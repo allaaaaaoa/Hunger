@@ -2,6 +2,9 @@
     font-family: Banny;
     src: url(../fonts/Banny-Round.otf);
 }
+body {
+    background-color: #E8C300;
+}
 * {
     margin: 0;
     padding: 0;
