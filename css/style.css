@@ -3,7 +3,7 @@
     src: url(../fonts/Banny-Round.otf);
 }
 body {
-    background-color: #E8C300;
+    background-color:#FFFFFF;
 }
 * {
     margin: 0;
@@ -54,6 +54,7 @@ html {
 }
 
 /* секция promo */
+
 .section--promo {
     position: relative;
     margin-top: -180px;
@@ -361,5 +362,84 @@ html {
 .button-form {
     width: 100%;
 }
+.book-text {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 12px;
+    color: rgba(51, 51, 51, 0.5);
+}
+
+/* section--chocolate_pancakes */
+
+.section--chocolate_pancakes {
+    position: relative;
+    background: url(../img/chocolatebg.png) no-repeat center / cover;
+    z-index: 1;
+}
+.section--chocolate_pancakes::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+.section__subtitle-chok {
+    font-style: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+/* menu */
 
 
+.text-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 100px;
+}
+.navigation-menu {
+    padding-top: 50px;
+    max-width: 840px;
+    width: 100%;
+}
+.nav-item_menu {
+    color: #000000;
+    max-height: 50px;
+}
+.nav-item_menu:not(:last-child) {
+    border-right: 1px solid rgba(51, 51, 51, 0.2);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 100px;
+}
+.menu-h {
+    font-family: 'Banny';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: #333333;
+    padding-top: 40px;
+}
+.menu-p {
+    font-family:'Open Sans';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    opacity: 50%;
+}
