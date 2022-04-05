@@ -267,7 +267,6 @@ html {
 
 .block_master {
     position: relative;
-  
     padding-top: 50px;
 }
 
@@ -377,6 +376,7 @@ html {
     background: url(../img/chocolatebg.png) no-repeat center / cover;
     z-index: 1;
 }
+
 .section--chocolate_pancakes::after {
     content: '';
     position: absolute;
@@ -395,6 +395,17 @@ html {
     display: flex;
     justify-content: center;
     padding-top: 40px;
+}
+
+.ellipse {
+    display: flex;
+    justify-content: center;
+    margin-top: -25px;
+    padding-bottom: 50px;
+}
+.eli2 {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /* menu */
@@ -443,3 +454,110 @@ html {
     line-height: 18px;
     opacity: 50%;
 }
+
+/* PRIVATE EVENTS */
+
+.section--private-events{
+    position: relative;
+    background: url(../img/private-bg.png) no-repeat center / cover;
+    z-index: 1;
+}
+.section--private-events::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+.img-l {
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    margin-top: -100px;
+}
+.l {
+    border-radius: 5px;
+}
+.img-l::after {
+    content: '';
+    border: 20px solid #E8C300;
+    margin-top: -125px;
+    width: 210px;
+    height: 210px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+#rectangle {
+    position: absolute;
+    width: 80px;
+    height: 475px;
+    left: 521px;
+    background: #000000; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 5px 5px 0px;
+    }
+.rotate {
+    font-family: 'Banny';
+    font-size: 24px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    text-indent: 55px;
+    text-transform: uppercase;    
+    color: #FFFFFF;   
+    transform: rotate(90deg);
+}
+
+#square {
+    position: absolute;
+    width: 80px;
+    height: 475px;
+    right: 521px;
+    background: #000000; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px 0px 0px 5px;
+}
+.rotate__right {
+    font-family: 'Banny';
+    font-size: 24px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    text-indent: -410px;
+    text-transform: uppercase;
+    color: #FFFFFF; 
+    transform: rotate(-90deg);
+}
+
+.private-text {
+    margin-top: -50px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* gallery */
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    /* width: 100%; */
+}
+.img-gallery {
+     min-width: 247px; 
+    max-width: 500px; 
+     width: 100%; 
+}
+
+    
+/* form2 */
+
